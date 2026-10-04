@@ -1,0 +1,68 @@
+/* Shared layout rhythm for project detail pages (body.project-page). */
+.project-page .container-5,
+.project-page .project-detail {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  box-sizing: border-box;
+}
+.project-page .section { padding-top: 40px; padding-bottom: 72px; }
+.project-page .cover-block { max-width: none; margin: 0 0 48px; padding: 0; }
+.project-page .cover-block > .project-description { max-width: 760px; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; }
+
+/* Info column (role / year / keywords …) */
+.project-page .project-detail .div-block-7.info { max-width: 520px; }
+
+/* Sections */
+.project-page .div-block-9 {
+  padding-top: 72px;
+  padding-bottom: 24px;
+  margin-top: 24px;
+  border-top: 1px solid rgba(0, 0, 0, .08);
+}
+.project-page .project-detail > .div-block-9:first-child { border-top: 0; margin-top: 0; }
+.project-page.black .div-block-9 { border-top-color: rgba(255, 255, 255, .12); }
+.project-page .heading-6.project-list.detail { margin-bottom: 28px; }
+
+/* Sub-headings inside a section */
+.project-page .div-block-9 .subtitle { margin-top: 56px; margin-bottom: 16px; line-height: 1.15; }
+.project-page .div-block-9 .subtitle + .subtitle,
+.project-page .div-block-9 > .subtitle:first-child,
+.project-page .div-block-9 > :first-child > .subtitle:first-child,
+.project-page .research-questions > .subtitle:first-child,
+.project-page .background > .subtitle:first-child,
+.project-page .heading-6.project-list.detail + .subtitle { margin-top: 0; }
+.project-page .div-block-9 .subtitle + .subtitle { margin-top: 0; }
+
+/* Body copy */
+.project-page .div-block-9 .project-description.left,
+.project-page .div-block-9 .project-description_body { max-width: 680px; line-height: 1.7; }
+
+@media screen and (max-width: 767px) {
+  .project-page .container-5,
+  .project-page .project-detail { padding-left: 20px; padding-right: 20px; }
+  .project-page .div-block-9 { padding-top: 48px; }
+  .project-page .div-block-9 .subtitle { margin-top: 40px; }
+  /* stop fixed-width template pieces from causing horizontal scroll */
+  .project-page .cover-block > .project-description,
+  .project-page .footer-divider-two.sublayer { width: auto; max-width: 100%; }
+  .project-page .div-block-8 { min-width: 0; width: 100%; }
+  .project-page .project-description,
+  .project-page .heading-7,
+  .project-page .div-block-9 img,
+  .project-page .div-block-9 pre { min-width: 0; max-width: 100%; }
+  .project-page .div-block-47 { width: auto; max-width: 100%; display: block; }
+  .project-page .div-block-47 > * { max-width: 100%; }
+  html:has(body.project-page), body.project-page { overflow-x: clip; }
+}
+
+/* Hero media must fit the shared column */
+.project-page .container-5 img,
+.project-page .container-5 .w-background-video,
+.project-page .container-5 .w-embed-youtubevideo { max-width: 100%; }
+.project-page .image-10 { min-width: 0; width: 100%; height: auto; }
+.project-page .div-block-22 { width: 100%; }
+.project-page .div-block-22 > * { min-width: 0; max-width: 100%; }
+.project-page .div-block-22 .innotation { width: auto; }
